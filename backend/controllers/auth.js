@@ -1,6 +1,8 @@
 import { db } from "../connect.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
+import dotenv from 'dotenv'
+dotenv.config()
 
 export const register = (req, res) => {
 
@@ -53,7 +55,7 @@ export const login = (req, res) => {
     if (!checkPassword)
       return res.status(400).json("Wrong password or username!");
 
-    const token = jwt.sign({ id: data[0].id }, "secretkey");
+    const token = jwt.sign({ id: data[0].id }, process.env.SECRET_KEY);
 
     // destructuring data to show other values except password
     const { password, ...others } = data[0];

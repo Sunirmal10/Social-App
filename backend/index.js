@@ -8,7 +8,12 @@ import multer from "multer";
 import cors from "cors"
 import cookieParser from "cookie-parser";
 import relationshipRoutes from "./routes/relationships.js";
+import dotenv from 'dotenv'
+dotenv.config()
+const port = process.env.PORT;
+
 const app = express();
+
 
 // MIDDLEWARES //
 app.use((req, res, next) => {
@@ -23,7 +28,7 @@ app.use(cookieParser())
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, '../frontend/public/upload')
+    cb(null, `../${process.env.CLIENT_FOLDER_NAME}/public/upload`)
   },
   filename: function (req, file, cb) {
     
@@ -46,6 +51,6 @@ app.use("/api/comments", commentRoutes);
 app.use("/api/likes", likeRoutes);
 app.use("/api/relationships", relationshipRoutes);
 
-app.listen(7000, ()=> {
-    console.log("API WORKING")
+app.listen(port, ()=> {
+    console.log("API WORKING on PORT:", port)
 })
