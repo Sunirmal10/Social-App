@@ -2,15 +2,16 @@
 
 .stories {
   display: flex;
-  width: 50vw;
+  width: 60vw;
   gap: .625rem;
   height: 9.375rem;
   margin-bottom: 1.875rem;
-  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
 
 
   @media  (max-width: 30rem) {
-    width: 100vw;
+   width: 97vw;
     height: 3.125rem;
     margin-bottom: .9375rem;
     margin-left: .3125rem;
@@ -22,7 +23,7 @@
     height: 6.25rem;
     margin-bottom: .9375rem;
     margin-left: .625rem;
-    width: 70vw;
+    width: 72vw;
     overflow: scroll;
   }
 
@@ -33,9 +34,9 @@
   overflow: scroll;
   }
 
-  // &::-webkit-scrollbar {
-  //   display: none;
-  // }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   
 

@@ -11,8 +11,12 @@
 
     @media (min-width: 960px) and (max-width: 1024px) {
 
-      flex: 6;
+      flex: 3.5;
      
+      }
+
+      @media (min-width: 1024px) {
+
       }
 
     @include mobile{
@@ -139,6 +143,7 @@
               border: none;
               padding: .3125rem;
               color: white;
+              border-radius: 0.2rem;
               cursor: pointer;
 
               @media (min-width: 960px) and (max-width: 1024px) {

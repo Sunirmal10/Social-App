@@ -17,7 +17,7 @@
     z-index: 999;
 
     @media  (max-width: 30rem) {
-    
+    justify-content: space-between;
     }
 
     @media (min-width: 30rem) and (max-width: 60rem) {
@@ -36,7 +36,7 @@
       cursor: pointer;
 
       @media  (max-width: 30rem) {
-        justify-content:space-around;
+        justify-content: flex-start;
       }
   
     //   @media (min-width: 30rem) and (max-width: 60rem) {
@@ -44,14 +44,22 @@
     //   }
   
       
-    // @media (min-width: 60rem) and (max-width: 64rem) {
-  
-    //   }
+    @media (min-width: 60rem) and (max-width: 64rem) {
+  gap: 20px;
+      }
 
       span {
         font-weight: bold;
         font-size: 1.25rem;
         color: themed("logo");
+
+        @media  (max-width: 30rem) {
+          font-size: 10px;
+           }
+
+          //  @media (min-width: 960px) and (max-width: 1024px) {
+          //   font-size: 14px;
+          //  }
       }
 
       .search {
@@ -70,6 +78,10 @@
           width: 31.25rem;
           background-color: transparent;
           color: themed("textColor");
+
+          @media (min-width: 960px) and (max-width: 1024px) {
+            width: 25rem;
+             }
           
           &:focus {
             outline: none;
@@ -84,6 +96,16 @@
           }
         }
       }
+    }
+
+    .log-out-mobile {
+      display: none;
+      margin-left: 20px;
+
+      @include mobile{
+        display: block;
+      }
+
     }
 
     .right {

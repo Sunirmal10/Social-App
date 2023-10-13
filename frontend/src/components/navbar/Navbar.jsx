@@ -4,7 +4,7 @@ import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import GridViewRoundedIcon from '@mui/icons-material/GridViewRounded';
 import NotificationsActiveRoundedIcon from '@mui/icons-material/NotificationsActiveRounded';
 import MailRoundedIcon from '@mui/icons-material/MailRounded';
-import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
+import PowerSettingsNewRoundedIcon from '@mui/icons-material/PowerSettingsNewRounded';
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
@@ -63,12 +63,15 @@ const Navbar = () => {
           <input type="text" placeholder="Search..." />
         </div>
       </div>
+      <div className="log-out-mobile"  onClick={handleLogout}>
+        <PowerSettingsNewRoundedIcon/>
+      </div>
       <div className="right">
         <MailRoundedIcon />
         <NotificationsActiveRoundedIcon />
         <div className="user">
        
-        <Link to={`http://localhost:3000/profile/${currentUser.id}`} style={{ textDecoration: "none", color: 'inherit' }}>
+        <Link to={`http://localhost:3000/profile/${currentUser.id}`} style={{ textDecoration: "none", color: 'inherit', display: "flex", justifyContent: 'center', alignItems: 'center' }}>
           <img
             src={
               "/upload/" 

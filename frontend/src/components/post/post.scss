@@ -9,22 +9,19 @@
     background-color: themed("bg");
     color: themed("textColor");
 
-    @media  (max-width: 30rem) {
-    border-radius: 0;
-    }
 
     @media (min-width: 30rem) and (max-width: 60rem) {
-     
+     flex: 1;
     }
 
     
-  @media (min-width: 60rem) and (max-width: 64rem) {
-
+  @media (max-width: 60rem)  {
+    border-radius: 0;
     }
 
 
     .container {
-      padding: 1.25rem;
+      padding: 1rem;
 
 
       .user {

@@ -61,7 +61,7 @@ const Share = () => {
             <img src={"/upload/" + currentUser.profilePic} alt="" />
             <input
               type="text"
-              placeholder={`Share with people, ${currentUser.name}.`}
+              placeholder={`Add your post.`}
               onChange={(e) => setDesc(e.target.value)}
               value={desc}
             />

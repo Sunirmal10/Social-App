@@ -10,12 +10,36 @@
     color: themed("textColor");
     margin-bottom: 1.25rem;
 
+    @media (max-width: 960px) {
+       border-radius: 0;
+    }
+
     .container {
+      display: flex;
+      flex-direction: column;
       padding: 1.25rem;
+
+      @media  (max-width: 30rem) {
+       padding: 0.5rem;
+        }
+    
+        @media (min-width: 30rem) and (max-width: 60rem) {
+         
+        }
+    
+        
+      @media (min-width: 60rem) and (max-width: 64rem) {
+    
+        }
       .top {
         display: flex;
+
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+
+        @media  (max-width: 30rem) {
+          width: 70%;
+           }
 
         .left {
           display: flex;
@@ -35,6 +59,10 @@
             background-color: transparent;
             width: 70%;
             color: themed("textColor");
+
+            @media  (max-width: 30rem) {
+              padding: 0.5rem;
+               }
           }
         }
         .right {
@@ -55,29 +83,47 @@
         border: none;
         height: .0313rem;
         background-color: themed("border");
+
+        @media  (max-width: 30rem) {
+          margin: 0.5rem 0;
+           }
       }
 
       .bottom {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+       justify-content: space-between;
+
+    //    @media (max-width: 30rem) {
+
+    //    }
+
+    //    @media (min-width: 30rem) and (max-width: 60rem) {
+     
+    //    }
+   
+       
+    //  @media (min-width: 60rem) and (max-width: 64rem) {
+    //     justify-content: space-between;
+    //    }
         .left {
           display: flex;
           align-items: center;
-          gap: 1rem;
+          gap: 10px;
 
           .item {
             display: flex;
             align-items: center;
-            gap: .625rem;
+            gap: .3125rem;
             cursor: pointer;
 
             img {
+              width: 1rem;
               height: 1.25rem;
             }
 
             span {
-              font-size: .65rem;
+              font-size: .5rem;
               color: gray;
             }
           }

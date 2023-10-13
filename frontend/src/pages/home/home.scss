@@ -2,17 +2,22 @@
 
 .home{
   @include themify($themes) {
-    padding: 1.25rem 1.875rem;
+    margin: 0;
+    padding: 1.25rem 0;
     background-color: themed("bgSoft");
     min-height: 100vh;
 
-    @include mobile {
-      overflow: hidden;
-      padding: .3125rem;
+    @media  (max-width: 480px) {
+
     }
 
-    @include tablet{
-      padding: .625rem;
+
+    @media (min-width: 960px) and (max-width: 1024px) {
+      flex: 3;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 1.25rem;
     }
   }
  }

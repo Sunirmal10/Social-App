@@ -12,6 +12,7 @@
       background-color: themed("bgSoft");
 
       @media  (max-width: 30rem) {
+        padding-top: 0;
         height: 200px;
       }
 
@@ -22,6 +23,7 @@
         border-radius: 8px;
 
         @media  (max-width: 30rem) {
+          border-radius: 0;
           height: 150px;
         }
     
@@ -51,7 +53,8 @@
 
         
         @media  (max-width: 30rem) {
-          top: 4.5rem;
+          border: 15px solid themed("bgSoft");
+          top: 2.5rem;
           left: -11.5rem;
           transform: scale(0.5);
         }
@@ -151,7 +154,8 @@
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
+            gap: 10px;
 
             .item {
               display: flex;
