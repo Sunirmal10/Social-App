@@ -24,6 +24,8 @@ A social Media web application.
 
 # Github repo link:
 
+https://github.com/Sunirmal10/Social-App.git
+
 # Preview:
 
 ![social_app](https://github.com/Sunirmal10/Social-App/assets/119140881/f857a1ef-d48b-4d8f-9935-01feec7dab0d)
