@@ -35,7 +35,7 @@ https://github.com/Sunirmal10/Social-App.git
 
 1. Clone the git repository using the git repo link.
 
-2. To start the frontend/client server:
+2. To start the frontend/client side:
 
  ```
 cd frontend
