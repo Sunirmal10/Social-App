@@ -1,0 +1,98 @@
+@import "../../style.scss";
+
+.share {
+  @include themify($themes) {
+    -webkit-box-shadow: 0rem 0rem 1.5625rem -0.625rem rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 0rem 0rem 1.5625rem -0.625rem rgba(0, 0, 0, 0.38);
+    box-shadow: 0rem 0rem 1.5625rem -0.625rem rgba(0, 0, 0, 0.38);
+    border-radius: 1.25rem;
+    background-color: themed("bg");
+    color: themed("textColor");
+    margin-bottom: 1.25rem;
+
+    .container {
+      padding: 1.25rem;
+      .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left {
+          display: flex;
+          align-items: center;
+          flex: 3;
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          input {
+            border: none;
+            outline: none;
+            padding: 1.25rem .625rem;
+            background-color: transparent;
+            width: 60%;
+            color: themed("textColor");
+          }
+        }
+        .right {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+          .file {
+            width: 6.25rem;
+            height: 6.25rem;
+            object-fit: cover;
+            border-radius: 0rem;
+          }
+        }
+      }
+
+      hr {
+        margin: 1.25rem 0rem;
+        border: none;
+        height: .0313rem;
+        background-color: themed("border");
+      }
+
+      .bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .left {
+          display: flex;
+          align-items: center;
+          gap: 1.25rem;
+
+          .item {
+            display: flex;
+            align-items: center;
+            gap: .625rem;
+            cursor: pointer;
+
+            img {
+              height: 1.25rem;
+            }
+
+            span {
+              font-size: .75rem;
+              color: gray;
+            }
+          }
+        }
+        .right {
+          button {
+            border: none;
+            padding: .3125rem;
+            color: white;
+            cursor: pointer;
+            background-color: #5271ff;
+            border-radius: .1875rem;
+          }
+        }
+      }
+    }
+  }
+}

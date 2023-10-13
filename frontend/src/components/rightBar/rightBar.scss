@@ -1,0 +1,108 @@
+@import "../../style.scss";
+
+.rightBar {
+  @include themify($themes) {
+    flex: 3;
+    position: sticky;
+    top: 4.375rem;
+    height: calc(100vh - 4.375rem);
+    overflow: scroll;
+    background-color: themed("bgSoft");
+
+    @include mobile{
+      display: none;
+    }
+    @include tablet{
+      display: none;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .container {
+      padding: 1.25rem;
+
+      .item {
+        -webkit-box-shadow: 0rem 0rem .9375rem .0625rem rgba(0, 0, 0, 0.09);
+        -moz-box-shadow: 0rem 0rem .9375rem .0625rem rgba(0, 0, 0, 0.09);
+        box-shadow: 0rem 0rem .9375rem .0625rem rgba(0, 0, 0, 0.09);
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+        background-color: themed("bg");
+        border-radius: .3125rem;
+
+        span {
+          color: gray;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 1.25rem 0rem;
+
+          .userInfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .625rem;
+            position: relative;
+
+            img {
+              width: 2.5rem;
+              height: 2.5rem;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            .online {
+              width: .75rem;
+              height: .75rem;
+              border-radius: 50%;
+              background-color: limegreen;
+              position: absolute;
+              top: 0;
+              left: 1.875rem;
+            }
+
+            p {
+              font-size: .75rem;
+              color: themed("textColorSoft");
+            }
+
+            span {
+              font-size: .875rem;
+              font-weight: 500;
+              color: themed("textColor");
+            }
+          }
+
+          span {
+            font-size: .625rem;
+          }
+          .buttons {
+            display: flex;
+            align-items: center;
+            gap: .625rem;
+
+            button {
+              border: none;
+              padding: .3125rem;
+              color: white;
+              cursor: pointer;
+
+              &:first-child {
+                background-color: #5271ff;
+              }
+
+              &:last-child {
+                background-color: #f0544f;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

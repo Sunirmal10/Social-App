@@ -1,0 +1,140 @@
+@import "../../style.scss";
+
+.navbar {
+  @include themify($themes) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .625rem 1.25rem;
+    height: 3.125rem;
+    border-bottom: .0625rem solid themed("border");
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: themed("bg");
+    color:themed("textColor");
+    z-index: 999;
+
+    @media  (max-width: 30rem) {
+    
+    }
+
+    @media (min-width: 30rem) and (max-width: 60rem) {
+     
+    }
+
+    
+  @media (min-width: 60rem) and (max-width: 64rem) {
+
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      gap: 1.875rem;
+      cursor: pointer;
+
+      @media  (max-width: 30rem) {
+        justify-content:space-around;
+      }
+  
+    //   @media (min-width: 30rem) and (max-width: 60rem) {
+       
+    //   }
+  
+      
+    // @media (min-width: 60rem) and (max-width: 64rem) {
+  
+    //   }
+
+      span {
+        font-weight: bold;
+        font-size: 1.25rem;
+        color: themed("logo");
+      }
+
+      .search {
+        display: flex;
+        align-items: center;
+        gap: .625rem;
+        border: .0625rem solid themed("border");
+        border-radius: .3125rem;
+        padding: .3125rem;
+
+        input {
+          border: none;
+          border-radius: .3125rem;
+          padding-left: .625rem;
+          height: 1.5625rem;
+          width: 31.25rem;
+          background-color: transparent;
+          color: themed("textColor");
+          
+          &:focus {
+            outline: none;
+          }
+
+          @include mobile{
+            display: none;
+          }
+
+          @include tablet{
+            width: 12.5rem;
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      cursor: pointer;
+
+      @include mobile{
+        display: none;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: .625rem;
+        font-weight: 500;
+
+        .name {
+          display: flex;
+          position: relative;
+
+          .logout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 2.1875rem;
+            right: 0;
+            padding: .625rem .9375rem;
+            border-radius: .4375rem;
+            background-color: themed("bg");
+            box-shadow: .0625rem .0625rem .3125rem .125rem themed("bgSoft");
+          }
+  
+        }
+        
+        @include tablet{
+          display: none;
+        }
+
+        img {
+          width: 1.875rem;
+          height: 1.875rem;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        span {
+        }
+      }
+    }
+  }
+}

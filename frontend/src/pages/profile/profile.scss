@@ -1,0 +1,140 @@
+@import "../../style.scss";
+
+.profile {
+  @include themify($themes) {
+    background-color: themed("bgSoft");
+
+    .images {
+      width: 100%;
+      height: 16.875rem;
+      position: relative;
+      padding-top: 1.25rem;
+      background-color: themed("bgSoft");
+
+      .cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+
+      .profilePic {
+        width: 12.5rem;
+        height: 12.5rem;
+        box-shadow: 0 0 .3125rem .125rem themed("bgSoft");
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 9.375rem;
+      }
+    }
+    .profileContainer {
+      padding: 1.25rem 4.375rem;
+
+      @include mobile{
+        padding: .625rem;
+      }
+
+      @include tablet{
+        padding: 1.25rem;
+      }
+
+      .uInfo {
+        height: 11.25rem;
+        -webkit-box-shadow: 0rem 0rem 1.5625rem -0.625rem rgba(0, 0, 0, 0.38);
+        -moz-box-shadow: 0rem 0rem 1.5625rem -0.625rem rgba(0, 0, 0, 0.38);
+        box-shadow: 0rem 0rem 1.5625rem -0.625rem rgba(0, 0, 0, 0.38);
+        border-radius: 1.25rem;
+        background-color: themed("bg");
+        color: themed("textColor");
+        padding: 1.875rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+
+        @include mobile{
+          flex-direction: column;
+          height: 40vh;
+          padding: 1.25rem;
+          gap: .3125rem;
+          margin-top: 6.25rem;
+        }
+
+        .left {
+          flex: 1;
+          display: flex;
+          gap: .625rem;
+          padding: 0 1.25rem;
+          @include tablet{
+            flex-wrap: wrap;
+          }
+
+          a{
+            color: themed("textColorSoft");
+          }
+        }
+
+        .center {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          padding: 0 1.25rem;
+          gap: .625rem;
+
+          @include mobile{
+            
+            margin-top: 0;
+          }
+
+          span {
+            font-size: 1.375rem;
+            font-weight: 500;
+          }
+
+          .info {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            .item {
+              display: flex;
+              align-items: center;
+              gap: .3125rem;
+              color: themed("textColorSoft");
+
+              span {
+                font-size: .75rem;
+              }
+            }
+          }
+          
+        }
+
+        .right {
+          flex: 1;
+          display: flex;
+          padding: 0 1.25rem;
+          align-items: center;
+          justify-content: space-evenly;
+          gap: .625rem;
+
+          button {
+            border: none;
+            background-color: #5271ff;
+            color: white;
+            padding: .625rem .9375rem;
+            border-radius: .3125rem;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

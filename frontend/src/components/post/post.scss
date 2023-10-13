@@ -1,0 +1,83 @@
+@import "../../style.scss";
+
+.post {
+  @include themify($themes) {
+    -webkit-box-shadow: 0rem 0rem 1.5625rem -0.625rem rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 0rem 0rem 1.5625rem -0.625rem rgba(0, 0, 0, 0.38);
+    box-shadow: 0rem 0rem 1.5625rem -0.625rem rgba(0, 0, 0, 0.38);
+    border-radius: 1.25rem;
+    background-color: themed("bg");
+    color: themed("textColor");
+
+    .container {
+      padding: 1.25rem;
+
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        .userInfo {
+          display: flex;
+          gap: 1.25rem;
+
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+
+          .details {
+            display: flex;
+            flex-direction: column;
+
+            .name {
+              font-weight: 500;
+            }
+
+            .date {
+              font-size: .75rem;
+            }
+          }
+        }
+        button {
+          position: absolute;
+          top: 1.875rem;
+          right: 0;
+          border: none;
+          background-color: #f0544f;
+          padding: .3125rem;
+          cursor: pointer;
+          color: white;
+        }
+      }
+
+      .content {
+        margin: 1.25rem 0rem;
+
+        img {
+          width: 100%;
+          max-height: 31.25rem;
+          object-fit: cover;
+          margin-top: 1.25rem;
+        }
+      }
+
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+
+        .item {
+          display: flex;
+          align-items: center;
+          gap: .625rem;
+          cursor: pointer;
+          font-size: .875rem;
+        }
+      }
+    }
+  }
+}

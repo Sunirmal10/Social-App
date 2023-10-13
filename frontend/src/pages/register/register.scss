@@ -1,0 +1,178 @@
+.register {
+    height: 100vh;
+    background-color: rgb(193, 190, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .card {
+      width: 70%;
+      display: flex;
+      flex-direction: row-reverse;
+      background-color: white;
+      border-radius: .625rem;
+      overflow: hidden;
+
+      @media  (max-width: 30rem) {
+      
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        flex-direction: column;
+        overflow: auto;
+         
+       }
+
+       @media (min-width: 30rem) and (max-width: 60rem) {
+        width: 100%;
+        height: 95%;
+        overflow: auto;
+        margin: 16px;
+      }
+
+    
+      @media (min-width: 60rem) and (max-width: 64rem) {
+        margin: 24px 0;
+        width: 70%;
+        }
+  
+      .left {
+        flex: 1;
+        background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
+          url("https://static.vecteezy.com/system/resources/previews/011/887/278/non_2x/laptop-open-pages-landing-page-template-for-web-illustration-vector.jpg")
+            center;
+        background-size: cover;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        color: white;
+
+        
+        @media  (max-width: 30rem) { 
+
+          gap: 8px;
+
+        }
+
+        @media (min-width: 30rem) and (max-width: 60rem) {
+          width: 50%;
+       
+        }
+
+        
+        @media (min-width: 60rem) and (max-width: 64rem) {
+          width: 50%;
+          }
+  
+        h1 {
+          font-size: 4.375rem;
+          line-height: 4.375rem;
+
+          
+  
+            @media  (max-width: 30rem) {
+              font-size: 48px;
+              line-height: 72px;
+              margin: 0;
+            }
+  
+            @media (min-width: 30rem) and (max-width: 60rem) {
+              font-size: 48px;
+              margin: 0;
+            }
+
+            @media (min-width: 60rem) and (max-width: 64rem) {
+
+              font-size: 64px;
+              margin:0;
+               }
+        }
+        
+        p {
+
+          @media (min-width: 30rem) and (max-width: 60rem) {
+            margin: 0;
+          }
+
+                
+      @media (min-width: 60rem) and (max-width: 64rem) {
+            margin: 0;
+          }
+        }
+  
+        span {
+          font-size: .875rem;
+        }
+        
+        button {
+          width: 50%;
+          padding: .625rem;
+          border: none;
+          background-color: white;
+          color: rebeccapurple;
+          font-weight: bold;
+          cursor: pointer;
+          border-radius: 8px;
+        }
+      }
+  
+      .right {
+        flex: 1;
+        padding: 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        justify-content: center;
+
+        @media  (max-width: 30rem) {
+          gap: 32px;
+      }
+
+      @media (min-width: 30rem) and (max-width: 60rem) {
+        gap: 32px;
+      }
+  
+        h1 {
+        color: #555;
+
+        @media  (max-width: 30rem) {
+          margin: 0;   
+         }
+ 
+         @media (min-width: 30rem) and (max-width: 60rem) {
+          margin: 0;
+         }
+
+         @media (min-width: 60rem) and (max-width: 64rem) {
+          margin: 0;
+        }
+
+
+        }
+        
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 1.875rem;
+          
+          input {
+          border: none;
+          border-bottom: .0625rem solid lightgray;
+          padding: 1.25rem .625rem;
+          }
+          
+          button {
+            width: 50%;
+            padding: .625rem;
+            border: none;
+            background-color: #938eef;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
