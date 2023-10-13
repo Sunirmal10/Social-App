@@ -5,17 +5,36 @@
     background-color: themed("bgSoft");
 
     .images {
-      width: 100%;
+
       height: 16.875rem;
       position: relative;
       padding-top: 1.25rem;
       background-color: themed("bgSoft");
+
+      @media  (max-width: 30rem) {
+        height: 200px;
+      }
 
       .cover {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-radius: 8px;
+
+        @media  (max-width: 30rem) {
+          height: 150px;
+        }
+    
+        @media (min-width: 30rem) and (max-width: 60rem) {
+         
+        }
+    
+        
+      @media (min-width: 60rem) and (max-width: 64rem) {
+    
+        }
+
+        
       }
 
       .profilePic {
@@ -29,18 +48,31 @@
         right: 0;
         margin: auto;
         top: 9.375rem;
+
+        
+        @media  (max-width: 30rem) {
+          top: 4.5rem;
+          left: -11.5rem;
+          transform: scale(0.5);
+        }
       }
     }
     .profileContainer {
-      padding: 1.25rem 4.375rem;
+      padding: 1.25rem 2rem;
 
-      @include mobile{
-        padding: .625rem;
+      @media  (max-width: 30rem) {
+        padding: 1rem 0;
       }
-
-      @include tablet{
-        padding: 1.25rem;
+  
+      @media (min-width: 30rem) and (max-width: 60rem) {
+       padding: 1.25rem 0;
       }
+  
+      
+    @media (min-width: 60rem) and (max-width: 64rem) {
+      padding: 1rem 0;;
+      }
+    
 
       .uInfo {
         height: 11.25rem;
@@ -50,25 +82,43 @@
         border-radius: 1.25rem;
         background-color: themed("bg");
         color: themed("textColor");
-        padding: 1.875rem;
+        padding: 1.85rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 1.25rem;
 
-        @include mobile{
+        @media  (max-width: 30rem) {
+          padding: 1rem 0.5rem;
           flex-direction: column;
           height: 40vh;
-          padding: 1.25rem;
-          gap: .3125rem;
-          margin-top: 6.25rem;
+          gap: .3rem;
+          margin: 1rem;
+          
         }
+    
+        @media (min-width: 30rem) and (max-width: 60rem) {
+         
+        }
+    
+        
+      @media (min-width: 60rem) and (max-width: 64rem) {
+    
+        }
+
+       
 
         .left {
           flex: 1;
           display: flex;
           gap: .625rem;
           padding: 0 1.25rem;
+
+          
+        @media  (max-width: 30rem) {
+        padding: 0;
+        }
+
           @include tablet{
             flex-wrap: wrap;
           }

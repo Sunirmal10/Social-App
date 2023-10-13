@@ -1,5 +1,4 @@
 .register {
-    height: 100vh;
     background-color: rgb(193, 190, 255);
     display: flex;
     align-items: center;
@@ -11,7 +10,7 @@
       flex-direction: row-reverse;
       background-color: white;
       border-radius: .625rem;
-      overflow: hidden;
+      overflow: scroll;
 
       @media  (max-width: 30rem) {
       

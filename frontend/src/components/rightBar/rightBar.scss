@@ -9,6 +9,12 @@
     overflow: scroll;
     background-color: themed("bgSoft");
 
+    @media (min-width: 960px) and (max-width: 1024px) {
+
+      flex: 6;
+     
+      }
+
     @include mobile{
       display: none;
     }
@@ -23,17 +29,41 @@
     .container {
       padding: 1.25rem;
 
+      @media  (max-width: 30rem) {
+      
+      }
+  
+      @media (min-width: 30rem) and (max-width: 60rem) {
+       
+      }
+  
+      
+    @media (min-width: 60rem) and (max-width: 64rem) {
+      padding: 0.5rem;
+      }
+
       .item {
         -webkit-box-shadow: 0rem 0rem .9375rem .0625rem rgba(0, 0, 0, 0.09);
         -moz-box-shadow: 0rem 0rem .9375rem .0625rem rgba(0, 0, 0, 0.09);
         box-shadow: 0rem 0rem .9375rem .0625rem rgba(0, 0, 0, 0.09);
         padding: 1.25rem;
-        margin-bottom: 1.25rem;
+        margin-bottom: 1rem;
         background-color: themed("bg");
         border-radius: .3125rem;
 
+            
+    @media (min-width: 60rem) and (max-width: 64rem) {
+      padding: 0.5rem;
+      }
+
         span {
           color: gray;
+              
+    @media (min-width: 960px) and (max-width: 1024px) {
+
+      font-size: 10px;
+     
+      }
         }
 
         .user {
@@ -41,6 +71,9 @@
           align-items: center;
           justify-content: space-between;
           margin: 1.25rem 0rem;
+          gap: 5px;
+          
+
 
           .userInfo {
             display: flex;
@@ -69,20 +102,36 @@
             p {
               font-size: .75rem;
               color: themed("textColorSoft");
+
+              
+      @media (min-width: 960px) and (max-width: 1024px) {
+
+       font-size: 0.65rem;
+       
+        }
+
             }
 
             span {
               font-size: .875rem;
               font-weight: 500;
               color: themed("textColor");
+              margin-left: 0;
+
+              @media (min-width: 960px) and (max-width: 1024px) {
+
+                font-size: 10px;
+               
+                }
             }
           }
 
           span {
-            font-size: .625rem;
+            font-size: .625rem;            
           }
           .buttons {
             display: flex;
+            justify-content: center;
             align-items: center;
             gap: .625rem;
 
@@ -91,6 +140,11 @@
               padding: .3125rem;
               color: white;
               cursor: pointer;
+
+              @media (min-width: 960px) and (max-width: 1024px) {
+                font-size: 10px;
+              padding: 0.2rem;
+                }
 
               &:first-child {
                 background-color: #5271ff;

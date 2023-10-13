@@ -9,8 +9,23 @@
     background-color: themed("bg");
     color: themed("textColor");
 
+    @media  (max-width: 30rem) {
+    border-radius: 0;
+    }
+
+    @media (min-width: 30rem) and (max-width: 60rem) {
+     
+    }
+
+    
+  @media (min-width: 60rem) and (max-width: 64rem) {
+
+    }
+
+
     .container {
       padding: 1.25rem;
+
 
       .user {
         display: flex;
@@ -76,6 +91,20 @@
           gap: .625rem;
           cursor: pointer;
           font-size: .875rem;
+
+          
+    @media  (max-width: 30rem) {
+      font-size: 0.7rem;
+    }
+
+    @media (min-width: 30rem) and (max-width: 60rem) {
+     
+    }
+
+    
+  @media (min-width: 60rem) and (max-width: 64rem) {
+
+    }
         }
       }
     }

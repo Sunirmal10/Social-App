@@ -1,5 +1,18 @@
 .posts{
   display: flex;
   flex-direction: column;
-  gap: 3.125rem;
+  gap: 3rem;
+
+  @media  (max-width: 30rem) {
+    gap: 1rem;
+  }
+
+  @media (min-width: 30rem) and (max-width: 60rem) {
+   
+  }
+
+  
+@media (min-width: 60rem) and (max-width: 64rem) {
+
+  }
 }

@@ -31,7 +31,7 @@ const Login = () => {
     <div className="login">
       <div className="card">
         <div className="left">
-          <h1>Welcome!</h1>
+          <h1>Welcome back!</h1>
           <p>
             Share your daily life with the world on Social App!
           </p>
