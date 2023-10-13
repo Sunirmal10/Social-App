@@ -26,6 +26,9 @@ A social Media web application.
 
 # Preview:
 
+![social_app](https://github.com/Sunirmal10/Social-App/assets/119140881/f857a1ef-d48b-4d8f-9935-01feec7dab0d)
+
+
 # Deployment:
 
 1. Clone the git repository using the git repo link.
