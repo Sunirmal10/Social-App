@@ -1,6 +1,6 @@
 # Overview:
 
-A social Media web application.
+A social Media web application using React, SCSS, Node.js, Express.js, axios, and react-query.
 
 # Key features:
 
