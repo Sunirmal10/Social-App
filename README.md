@@ -20,8 +20,6 @@ Social App - A social Media web application using React, SCSS, Node.js, Express.
 4. Express.js
 5. MySQL
 
-# Website link:
-
 # Github repo link:
 
 https://github.com/Sunirmal10/Social-App.git
