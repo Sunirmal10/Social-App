@@ -63,7 +63,7 @@ npm install
 
 B. Create your own MySQL database with host and password.
 
-C. Create one .env file and .gitignore file (add the .env file to it) in the root directory of the backend folder, then add the following keys and values:
+C. Create one .env file and .gitignore file (add the .env file to it) in the root directory of the backend folder, then add the following keys and values to the .env file:
 
 ```
 PORT=
