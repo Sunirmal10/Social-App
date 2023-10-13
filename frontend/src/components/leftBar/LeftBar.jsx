@@ -29,10 +29,10 @@ const LeftBar = () => {
           <div style={{display: 'flex', gap: '0.5rem', justifyContent: 'center', alignItems: 'center'}}>
 
           <img
-            src={
+            src={  currentUser.profilePic ?
               "/upload/" 
               + 
-              currentUser.profilePic}
+              currentUser.profilePic :  "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
             alt=""
           />
             <span>{currentUser.name}</span>

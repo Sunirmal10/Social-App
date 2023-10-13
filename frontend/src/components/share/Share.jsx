@@ -10,6 +10,7 @@ const Share = () => {
   const [file, setFile] = useState(null);
   const [desc, setDesc] = useState("");
 
+
   const upload = async () => {
 
     try {
@@ -26,7 +27,7 @@ const Share = () => {
     }
   };
 
-  const { currentUser } = useContext(AuthContext);
+  const { noImage, currentUser } = useContext(AuthContext);
 
   const queryClient = useQueryClient();
 
@@ -58,7 +59,7 @@ const Share = () => {
       <div className="container">
         <div className="top">
           <div className="left">
-            <img src={"/upload/" + currentUser.profilePic} alt="" />
+            <img src={ currentUser.profilePic ? "/upload/" + currentUser.profilePic : noImage} alt="" />
             <input
               type="text"
               placeholder={`Add your post.`}

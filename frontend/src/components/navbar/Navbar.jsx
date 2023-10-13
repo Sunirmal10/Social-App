@@ -16,7 +16,7 @@ import { makeRequest } from "../../axios";
 
 const Navbar = () => {
   const { toggle, darkMode } = useContext(DarkModeContext);
-  const { currentUser, setCurrentUser } = useContext(AuthContext);
+  const { currentUser, setCurrentUser, noImage } = useContext(AuthContext);
   const [err, setErr] = useState(null);
   
 
@@ -74,9 +74,10 @@ const Navbar = () => {
         <Link to={`http://localhost:3000/profile/${currentUser.id}`} style={{ textDecoration: "none", color: 'inherit', display: "flex", justifyContent: 'center', alignItems: 'center' }}>
           <img
             src={
+              currentUser.profilePic ?
               "/upload/" 
               + 
-              currentUser.profilePic}
+              currentUser.profilePic :  noImage}
             alt=""
           />
               </Link>

@@ -5,7 +5,7 @@ import { AuthContext } from "../../context/authContext";
 // import { makeRequest } from "../../axios";
 
 const Stories = () => {
-  const { currentUser } = useContext(AuthContext);
+  const { currentUser, noImage } = useContext(AuthContext);
 
   // temp //
 
@@ -93,9 +93,9 @@ const Stories = () => {
   return (
     <div className="stories">
       <div className="story proStory">
-        <img src={
+        <img src={ currentUser.profilePic ?
           "/upload/" + 
-          currentUser.profilePic} alt="" />
+          currentUser.profilePic : noImage} alt="" />
         <span>{currentUser.name}</span>
         <button>+</button>
       </div>

@@ -17,7 +17,7 @@ const Post = ({ post }) => {
   const [commentOpen, setCommentOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const { currentUser } = useContext(AuthContext);
+  const { currentUser, noImage } = useContext(AuthContext);
 
   const { isLoading, error, data } = useQuery(["likes", post.id], () =>
     makeRequest.get("/likes?postId=" + post.id).then((res) => {
@@ -64,7 +64,7 @@ const Post = ({ post }) => {
       <div className="container">
         <div className="user">
           <div className="userInfo">
-            <img src={"/upload/"+post.profilePic} alt="" />
+            <img src={post.profilePic ? "/upload/"+post.profilePic : noImage} alt="" />
             <div className="details">
               <Link
                 to={`/profile/${post.userId}`}

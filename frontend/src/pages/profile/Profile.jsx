@@ -65,8 +65,9 @@ const Profile = () => {
       ) : (
         <>
           <div className="images">
-            <img src={"/upload/"+data.coverPic} alt="" className="cover" />
-            <img src={"/upload/"+data.profilePic} alt="" className="profilePic" />
+            <img src={ data.coverPic ? "/upload/"+data.coverPic : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6LiMvatXBJYAoLgyg0S5vEMf54QevZ8-iv6fZCeozmWwRRZFS6-BgYAy_4qRuWDzPrzw&usqp=CAU"} alt="" className="cover" />
+
+            <img src={ data.profilePic ? "/upload/"+data.profilePic : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"} alt="" className="profilePic" />
           </div>
           <div className="profileContainer">
             <div className="uInfo">
