@@ -70,7 +70,14 @@ const Navbar = () => {
         <MailRoundedIcon />
         <NotificationsActiveRoundedIcon />
         <div className="user">
-       
+       {
+        !currentUser && 
+        <div>
+        <Link to="/login" style={{ textDecoration: "none", color: 'inherit'}}>Login</Link>
+        <Link to="/register" style={{ textDecoration: "none", color: 'inherit'}}>Sign Up</Link>
+        </div>
+          
+       }
         <Link to={`http://localhost:3000/profile/${currentUser.id}`} style={{ textDecoration: "none", color: 'inherit', display: "flex", justifyContent: 'center', alignItems: 'center' }}>
           <img
             src={

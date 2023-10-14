@@ -60,20 +60,24 @@ function App() {
     {
       path: "/",
       element: 
-      // <ProtectedRoute>
+      <ProtectedRoute>
       <Layout/>,
-      // </ProtectedRoute>,
+      </ProtectedRoute>,
         
       children:[
-        {
-          path: "/",
-          element: <Home/>
-        },
+        // {
+        //   path: "/",
+        //   element: <Home/>
+        // },
         {
           path: "/profile/:id",
           element: <Profile/>
         },
       ]
+    },
+    {
+      path: "/",
+      element: <Home/>
     },
     {
       path: "/login",
