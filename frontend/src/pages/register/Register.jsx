@@ -24,7 +24,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:7000/api/auth/register", inputs);
+      await axios.post("https://socialappbackend-kezq.onrender.com/api/auth/register", inputs);
       navigate("/login")
     } catch (err) {
       setErr(err.response.data);
