@@ -30,7 +30,8 @@ https://socialapponline.netlify.app/
 
 # Preview:
 
-![social_app](https://github.com/Sunirmal10/Social-App/assets/119140881/f857a1ef-d48b-4d8f-9935-01feec7dab0d)
+![social-app-pic](https://github.com/Sunirmal10/Social-App/assets/119140881/9fcd6aab-1280-4d56-892d-840c35095d7b)
+
 
 
 # Deployment:
