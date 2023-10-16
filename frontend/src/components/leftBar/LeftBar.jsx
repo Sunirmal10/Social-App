@@ -25,7 +25,7 @@ const LeftBar = () => {
       <div className="container">
         <div className="menu">
           <div className="user">
-          <Link to={`http://localhost:3000/profile/${currentUser.id}`} style={{ textDecoration: "none", color: 'inherit' }}>
+          <Link to={`https://socialapponline.netlify.app//profile/${currentUser.id}`} style={{ textDecoration: "none", color: 'inherit' }}>
           <div style={{display: 'flex', gap: '0.5rem', justifyContent: 'center', alignItems: 'center'}}>
 
           <img
