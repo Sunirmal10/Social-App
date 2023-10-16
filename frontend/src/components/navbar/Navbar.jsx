@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
           
        }
-        <Link to={`https://socialapponline.netlify.app//profile/${currentUser.id}`} style={{ textDecoration: "none", color: 'inherit', display: "flex", justifyContent: 'center', alignItems: 'center' }}>
+        <Link to={`http://localhost:3000/profile/${currentUser.id}`} style={{ textDecoration: "none", color: 'inherit', display: "flex", justifyContent: 'center', alignItems: 'center' }}>
           <img
             src={
               currentUser.profilePic ?

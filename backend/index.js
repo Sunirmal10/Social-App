@@ -22,7 +22,7 @@ app.use((req, res, next) => {
   });
 app.use(express.json())
 app.use(cors({
-    origin: "https://socialapponline.netlify.app/",
+  origin: "http://localhost:3000",
   }))
 app.use(cookieParser())
 

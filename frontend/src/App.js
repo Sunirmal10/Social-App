@@ -65,10 +65,10 @@ function App() {
       </ProtectedRoute>,
         
       children:[
-        // {
-        //   path: "/",
-        //   element: <Home/>
-        // },
+        {
+          path: "/",
+          element: <Home/>
+        },
         {
           path: "/profile/:id",
           element: <Profile/>

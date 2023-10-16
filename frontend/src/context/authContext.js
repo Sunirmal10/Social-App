@@ -11,7 +11,7 @@ export const AuthContextProvider = ({ children }) => {
   const noImage = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
 
   const login = async (inputs) => {
-    const res = await axios.post("https://socialappbackend-kezq.onrender.com/api/auth/login", inputs, {
+    const res = await axios.post("http://localhost:7000/api/auth/login", inputs, {
       withCredentials: true,
     });
 
